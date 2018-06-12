@@ -1,0 +1,1211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Voicecoin is the cryptocurrency used on the Voiceweb platform and is also the first phase of the Voiceweb project.">
+	<meta name="keywords" content="Voicecoin, Voiceweb, vc, voice, web, ico, AI, cryptocurrency, artificial intelligence, 语音币, IoT, 物联网, chatbot, voice domain, voice browser, DBot, blockchain">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+	<!-- Title -->
+	<title>VOICECOIN</title>
+
+	<!-- Favicon -->
+	<link rel="icon" href="favicon.ico">
+
+	<!-- Core Stylesheet -->
+	<link href="css/style.css" rel="stylesheet">
+
+	<!-- Responsive CSS -->
+	<link href="css/responsive.css" rel="stylesheet">
+
+</head>
+
+<body>
+	<!-- Preloader Start -->
+	<div id="preloader">
+		<div class="colorlib-load"></div>
+	</div>
+	<div id="voicecoin">
+		<!-- ***** Header Area Start ***** -->
+		<header class="header_area animated">
+			<div class="container-fluid">
+				<div class="row align-items-center">
+					<!-- Menu Area Start -->
+					<div class="col-12 col-lg-12">
+						<div class="menu_area">
+							<nav class="navbar navbar-expand-lg navbar-light">
+								<!-- Logo -->
+								<a class="navbar-brand" href="index.html">
+									<img src="img/core-img/logo.png" alt="Voicecoin">
+								</a>
+								<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ca-navbar" aria-controls="ca-navbar" aria-expanded="false"
+								    aria-label="Toggle navigation">
+									<span class="navbar-toggler-icon"></span>
+								</button>
+								<!-- Menu Area -->
+								<div class="collapse navbar-collapse" id="ca-navbar">
+									<ul class="navbar-nav ml-auto" id="nav">
+										<li class="nav-item active">
+											<a class="nav-link" href="javascript:void(0)" @click="goAnchor('#home')">{{vc[lang].header.home}}</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="javascript:void(0)" @click="goAnchor('#team')">{{vc[lang].header.team}}</a>
+										</li>
+										<!--<li class="nav-item">
+											<a class="nav-link" href="http://contribute.voicecoin.com/" target="_blank">{{vc[lang].header.token}}</a>
+										</li>-->
+										<li class="nav-item">
+											<a class="nav-link" href="foundation.html">{{vc[lang].header.found}}</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="http://voicechain.io/" target="_blank">{{vc[lang].header.test}}</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="faq.html">{{vc[lang].header.faq}}</a>
+										</li>
+										<li class="nav-item">
+											<button class="nav-lang" href v-on:click="changeLang">{{vc[lang].header.lang}}</button>
+										</li>
+									</ul>
+								</div>
+							</nav>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- ***** Header Area End ***** -->
+
+		<!-- ***** Wellcome Area Start ***** -->
+		<section class="wellcome_area clearfix" id="home">
+			<div class="container h-100" id="home-container">
+				<div class="row h-100 align-items-center">
+					<div class="col-12 col-md">
+						<div class="wellcome-heading">
+							<!--<img src="img/core-img/logo-2.png" alt="">-->
+							<h2>{{vc[lang].wel.title}}</h2>
+							<p>{{vc[lang].wel.sub1}}
+								<br>{{vc[lang].wel.sub2}}
+							</p>
+						</div>
+						<!--<div class="get-start-area">
+							<a href="http://contribute.voicecoin.com/" target="_bl">{{vc[lang].wel.buy}}</a>
+						</div>-->
+					</div>
+				</div>
+			</div>
+			<!-- Welcome thumb -->
+			<div class="welcome-thumb wow fadeInDown" id="welcome-img" data-wow-delay="0.5s">
+				<img src="img/bg-img/welcome-img-2.svg" alt="VOICECOIN">
+			</div>
+			<canvas id="welcome-star">
+			</canvas>
+
+		</section>
+		<!-- ***** Wellcome Area End ***** -->
+
+		<!-- ***** Special Area Start ***** -->
+		<section class="special-area bg-white section_padding_100" id="about">
+			<!-- Special Description Area -->
+			<div class="special_description_area ">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-6">
+							<div class="special_description_img">
+								<img src="img/bg-img/special.svg" alt="Structure">
+							</div>
+						</div>
+						<div class="col-lg-6 col-xl-5 ml-xl-auto">
+							<div class="row">
+								<div class="col-12">
+									<!-- Section Heading Area -->
+									<div class="section-heading text-center">
+										<h2>{{vc[lang].spe.h2}}</h2>
+										<div class="line-shape"></div>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-12 wow text-center fadeInUp sub-title">
+									<p>{{vc[lang].spe.p1}}</p>
+									<p>{{vc[lang].spe.p2}}</p>
+								</div>
+							</div>
+							<div class="row">
+								<div class="app-download-area">
+									<div class="app-download-btn wow fadeInUp" data-wow-delay="0.2s">
+										<!-- Google Store Btn -->
+										<a href="http://www.voiceweb.io/" target="_blank">
+											{{vc[lang].spe.more}}
+										</a>
+									</div>
+									<div class="app-download-btn wow fadeInDown" data-wow-delay="0.4s">
+										<!-- Apple Store Btn -->
+										<a href="http://www.voicecoin.com/faq.html" target="_blank">
+											{{vc[lang].spe.faq}}
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- ***** Special Area End ***** -->
+
+		<!-- ***** Video #1 Area Start ***** -->
+		<div class="video-section bg-white">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<video poster="img/bg-img/video-1.jpg" src="https://endaye.github.io/web-voicecoin-new/video/video-1.mp4" type="video/mp4"
+						    width="100%" height="auto" controls="true" class="video" id="video-1">
+						</video>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- ***** Video #1 Area End ***** -->
+
+		<!-- ***** Problem Start ***** -->
+		<section class="bg-white section_padding_100" id="problem">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<!-- Section Heading Area -->
+						<div class="section-heading text-center">
+							<h2>{{vc[lang].prblm.h2}}</h2>
+							<div class="line-shape"></div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-1"></div>
+					<div class="col-10 wow text-center fadeInUp sub-title">
+						<h4>{{vc[lang].prblm.h4}}</h4>
+						<p>{{vc[lang].prblm.p1}}</p>
+						<p>{{vc[lang].prblm.p2}}</p>
+					</div>
+				</div>
+				<div class="row">
+					<!-- Single Special Area -->
+					<div class="col-12 col-md-4">
+						<div class="single-special text-center wow fadeInUp problem-text" data-wow-delay="0.2s">
+							<div class="single-icon">
+								<img src="img/icon-img/voicecoin-search.png" alt="hard to use">
+							</div>
+							<h4>{{vc[lang].prblm.i[0].h4}}</h4>
+							<p>{{vc[lang].prblm.i[0].p}}</p>
+						</div>
+					</div>
+					<!-- Single Special Area -->
+					<div class="col-12 col-md-4">
+						<div class="single-special text-center wow fadeInUp problem-text" data-wow-delay="0.4s">
+							<div class="single-icon">
+								<img src="img/icon-img/voicecoin-voice-variety_1.png" alt="Lack of Variety">
+							</div>
+							<h4>{{vc[lang].prblm.i[1].h4}}</h4>
+							<p>{{vc[lang].prblm.i[1].p}}</p>
+						</div>
+					</div>
+					<!-- Single Special Area -->
+					<div class="col-12 col-md-4">
+						<div class="single-special text-center wow fadeInUp problem-text" data-wow-delay="0.6s">
+							<div class="single-icon">
+								<img src="img/icon-img/voicecoin-lack-of-standard.png" alt="No Standard">
+							</div>
+							<h4>{{vc[lang].prblm.i[2].h4}}</h4>
+							<p>{{vc[lang].prblm.i[2].p}}</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- ***** Problem End ***** -->
+
+		<!-- ***** Solution Start ***** -->
+		<section class="section_padding_50" id="solution">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<!-- Section Heading Area -->
+						<div class="section-heading text-center">
+							<h2>{{vc[lang].sl.h2}}</h2>
+							<div class="line-shape"></div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-1"></div>
+					<div class="col-10 wow text-center fadeInUp sub-title">
+						<h4>{{vc[lang].sl.h4}}</h4>
+						<p>{{vc[lang].sl.p1}}</p>
+						<p>{{vc[lang].sl.p2}}</p>
+					</div>
+				</div>
+				<div class="row">
+					<!-- Single Special Area -->
+					<div class="col-12 col-md-4">
+						<div class="single-special text-center wow fadeInUp solution-text" data-wow-delay="0.2s">
+							<div class="single-icon">
+								<img src="img/icon-img/voicecoin-variety.png" alt="Awesome Experience">
+							</div>
+							<h4>{{vc[lang].sl.i[0].h4}}</h4>
+							<p>{{vc[lang].sl.i[0].p}}</p>
+						</div>
+					</div>
+					<!-- Single Special Area -->
+					<div class="col-12 col-md-4">
+						<div class="single-special text-center wow fadeInUp solution-text" data-wow-delay="0.4s">
+							<div class="single-icon">
+								<img src="img/icon-img/voicecoin-one-stop-publishing.png" alt="Fast and Simple">
+							</div>
+							<h4>{{vc[lang].sl.i[1].h4}}</h4>
+							<p>{{vc[lang].sl.i[1].p}}</p>
+						</div>
+					</div>
+					<!-- Single Special Area -->
+					<div class="col-12 col-md-4">
+						<div class="single-special text-center wow fadeInUp solution-text" data-wow-delay="0.6s">
+							<div class="single-icon">
+								<img src="img/icon-img/voicecoin-global-chatbot_1.png" alt="Customizability">
+							</div>
+							<h4>{{vc[lang].sl.i[2].h4}}</h4>
+							<p>{{vc[lang].sl.i[2].p}}</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- ***** Solution End ***** -->
+
+		<!-- ***** Schematic Area Start ***** -->
+		<section class="section_padding_50 bg-white" id="schematic">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<!-- Section Heading Area -->
+						<div class="section-heading text-center">
+							<h2>{{vc[lang].sch.h2}}</h2>
+							<div class="line-shape"></div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-1"></div>
+					<div class="col-10 wow text-center fadeInUp sub-title">
+						<h4>{{vc[lang].sch.h4}}</h4>
+						<p>{{vc[lang].sch.p1}}</p>
+					</div>
+				</div>
+				<div class="row">
+					<!-- Single Special Area -->
+					<div class="col-12 col-md-6">
+						<div class="single-special text-center wow fadeInUp step-text" data-wow-delay="0.4s">
+							<img src="img/bg-img/architecture.svg" />
+						</div>
+					</div>
+					<!-- Single Special Area -->
+					<div class="col-12 col-md-6">
+						<div class="single-special text-center wow fadeInUp step-text" data-wow-delay="0.2s">
+							<h1>1</h1>
+							<p>{{vc[lang].sch.i[0].p}}</p>
+							<h1>2</h1>
+							<p>{{vc[lang].sch.i[1].p}}</p>
+							<h1>3</h1>
+							<p>{{vc[lang].sch.i[2].p}}</p>
+						</div>
+						<!-- Video Area Start -->
+						<video src="https://endaye.github.io/web-voicecoin-new/video/video-2.mp4" type="video/mp4" poster="img/bg-img/video-4.jpg"
+						    width="100%" height="auto" controls="true" class="video" id="video-2" preload="none">
+						</video>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- ***** Schematic Area End *****====== -->
+
+		<!-- ***** Awesome Features Start ***** -->
+		<section class="bg-white section_padding_50" id="feature">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<!-- Section Heading Area -->
+						<div class="section-heading text-center">
+							<h2>{{vc[lang].feat.h2}}</h2>
+							<div class="line-shape"></div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<!-- Single Special Area -->
+					<div class="col-12 col-md-4">
+						<div class="single-special text-center wow fadeInUp" data-wow-delay="0.2s">
+							<div class="single-icon">
+								<img src="img/icon-img/voicecoin-decentralized.png" alt="Decentralization">
+							</div>
+							<h4>{{vc[lang].feat.i[0].h4}}</h4>
+						</div>
+					</div>
+					<!-- Single Special Area -->
+					<div class="col-12 col-md-4">
+						<div class="single-special text-center wow fadeInUp" data-wow-delay="0.4s">
+							<div class="single-icon">
+								<img src="img/icon-img/voicecoin-secure.png" alt="Secure Transactions">
+							</div>
+							<h4>{{vc[lang].feat.i[1].h4}}</h4>
+						</div>
+					</div>
+					<!-- Single Special Area -->
+					<div class="col-12 col-md-4">
+						<div class="single-special text-center wow fadeInUp" data-wow-delay="0.6s">
+							<div class="single-icon">
+								<img src="img/icon-img/voicecoin-interconnected-synergy.png" alt="Interconnected Synergy">
+							</div>
+							<h4>{{vc[lang].feat.i[2].h4}}</h4>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<!-- Single Special Area -->
+					<div class="col-12 col-md-4">
+						<div class="single-special text-center wow fadeInUp" data-wow-delay="0.2s">
+							<div class="single-icon">
+								<img src="img/icon-img/voicecoin-trusted-support.png" alt="Trusted Support">
+							</div>
+							<h4>{{vc[lang].feat.i[3].h4}}</h4>
+						</div>
+					</div>
+					<!-- Single Special Area -->
+					<div class="col-12 col-md-4">
+						<div class="single-special text-center wow fadeInUp" data-wow-delay="0.4s">
+							<div class="single-icon">
+								<img src="img/icon-img/voicecoin-world-wide.png" alt="World Wide Communication">
+							</div>
+							<h4>{{vc[lang].feat.i[4].h4}}</h4>
+						</div>
+					</div>
+					<!-- Single Special Area -->
+					<div class="col-12 col-md-4">
+						<div class="single-special text-center wow fadeInUp" data-wow-delay="0.6s">
+							<div class="single-icon">
+								<img src="img/icon-img/voicecoin-speed.png" alt="Fast Uptime">
+							</div>
+							<h4>{{vc[lang].feat.i[5].h4}}</h4>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- ***** Awesome Features End ***** -->
+
+		<!-- ***** Our Team Area Start ***** -->
+		<section class="our-Team-area bg-white section_padding_100_50 clearfix" id="team">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 text-center">
+						<!-- Heading Text  -->
+						<div class="section-heading">
+							<h2>{{vc[lang].team.h2}}</h2>
+							<div class="line-shape"></div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12 col-md-6 col-lg-3">
+						<div class="single-team-member wow fadeInUp" id="george-zhao" data-wow-delay="0.2s">
+							<div class="team-hover-effects" id="george-zhao-bio">
+								<div class="member-image team-hover-effects-img">
+									<img src="img/team-img/george-zhao-1.jpg" alt="George Zhao">
+								</div>
+								<div class="team-hover-effects-inner">
+									<h4>{{vc[lang].team.i[0].h4}}</h4>
+									<h5>{{vc[lang].team.i[0].h5}}</h5>
+									<p>{{vc[lang].team.i[0].p1}}</p>
+								</div>
+								<div class="team-social-icon">
+									<a href="https://www.linkedin.com/in/jianwenzhao/" target="_blank">
+										<i class="fab fa-linkedin-in" aria-hidden="true"></i>
+									</a>
+								</div>
+							</div>
+							<div class="member-image">
+								<img src="img/team-img/george-zhao-1.jpg" alt="George Zhao">
+							</div>
+							<div class="member-text">
+								<h4>{{vc[lang].team.i[0].h4}}</h4>
+								<p>{{vc[lang].team.i[0].h5}}</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-3">
+						<div class="single-team-member wow fadeInUp" id="elaine-shao" data-wow-delay="0.4s">
+							<div class="team-hover-effects" id="elaine-shao-bio">
+								<div class="member-image team-hover-effects-img">
+									<img src="img/team-img/elaine-shao.jpg" alt="Elaine Shao">
+								</div>
+								<div class="team-hover-effects-inner">
+									<h4>{{vc[lang].team.i[1].h4}}</h4>
+									<h5>{{vc[lang].team.i[1].h5}}</h5>
+									<p>{{vc[lang].team.i[1].p1}}</p>
+								</div>
+								<div class="team-social-icon">
+									<a href="https://www.linkedin.com/in/elaine-shao-259a14161/" target="_blank">
+										<i class="fab fa-linkedin-in" aria-hidden="true"></i>
+									</a>
+								</div>
+							</div>
+							<div class="member-image">
+								<img src="img/team-img/elaine-shao.jpg" alt="Elaine Shao">
+							</div>
+							<div class="member-text">
+								<h4>{{vc[lang].team.i[1].h4}}</h4>
+								<p>{{vc[lang].team.i[1].h5}}</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-3">
+						<div class="single-team-member wow fadeInUp" id="yong-duan" data-wow-delay="0.6s">
+							<div class="team-hover-effects" id="yong-duan-bio">
+								<div class="member-image team-hover-effects-img">
+									<img src="img/team-img/yong-duan.jpg" alt="Yong Duan">
+								</div>
+								<div class="team-hover-effects-inner">
+									<h4>{{vc[lang].team.i[2].h4}}</h4>
+									<h5>{{vc[lang].team.i[2].h5}}</h5>
+									<p>{{vc[lang].team.i[2].p1}}</p>
+								</div>
+							</div>
+							<div class="member-image">
+								<img src="img/team-img/yong-duan.jpg" alt="Yong Duan">
+							</div>
+							<div class="member-text">
+								<h4>{{vc[lang].team.i[2].h4}}</h4>
+								<p>{{vc[lang].team.i[2].h5}}</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-3">
+						<div class="single-team-member wow fadeInUp" id="arnold-gu" data-wow-delay="0.6s">
+							<div class="team-hover-effects" id="arnold-gu-bio">
+								<div class="member-image team-hover-effects-img">
+									<img src="img/team-img/arnold-gu.jpg" alt="Arnold Gu">
+								</div>
+								<div class="team-hover-effects-inner">
+									<h4>{{vc[lang].team.i[11].h4}}</h4>
+									<h5>{{vc[lang].team.i[11].h5}}</h5>
+									<p>{{vc[lang].team.i[11].p1}}</p>
+								</div>
+							</div>
+							<div class="member-image">
+								<img src="img/team-img/arnold-gu.jpg" alt="Arnold Gu">
+							</div>
+							<div class="member-text">
+								<h4>{{vc[lang].team.i[11].h4}}</h4>
+								<p>{{vc[lang].team.i[11].h5}}</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12 col-md-6 col-lg-3">
+						<div class="single-team-member wow fadeInUp" id="kyle-bao" data-wow-delay="0.8s">
+							<div class="team-hover-effects" id="kyle-bao-bio">
+								<div class="member-image team-hover-effects-img">
+									<img src="img/team-img/kyle-bao.jpg" alt="Kyle Bao">
+								</div>
+								<div class="team-hover-effects-inner">
+									<h4>{{vc[lang].team.i[3].h4}}</h4>
+									<h5>{{vc[lang].team.i[3].h5}}</h5>
+									<p>{{vc[lang].team.i[3].p1}}</p>
+								</div>
+							</div>
+							<div class="member-image">
+								<img src="img/team-img/kyle-bao.jpg" alt="Kyle Bao">
+							</div>
+							<div class="member-text">
+								<h4>{{vc[lang].team.i[3].h4}}</h4>
+								<p>{{vc[lang].team.i[3].h5}}</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-3">
+						<div class="single-team-member wow fadeInUp" id="joyce-zhang" data-wow-delay="0.2s">
+							<div class="team-hover-effects" id="joyce-zhang-bio">
+								<div class="member-image team-hover-effects-img">
+									<img src="img/team-img/joyce-zhang.jpg" alt="Joyce Zhang">
+								</div>
+								<div class="team-hover-effects-inner">
+									<h4>{{vc[lang].team.i[4].h4}}</h4>
+									<h5>{{vc[lang].team.i[4].h5}}</h5>
+									<p>{{vc[lang].team.i[4].p1}}</p>
+								</div>
+								<div class="team-social-icon">
+									<a href="https://www.linkedin.com/in/joyce-zhang-a0102092/" target="_blank">
+										<i class="fab fa-linkedin-in" aria-hidden="true"></i>
+									</a>
+								</div>
+							</div>
+							<div class="member-image">
+								<img src="img/team-img/joyce-zhang.jpg" alt="Joyce Zhang">
+							</div>
+							<div class="member-text">
+								<h4>{{vc[lang].team.i[4].h4}}</h4>
+								<p>{{vc[lang].team.i[4].h5}}</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-12 col-md-6 col-lg-3">
+						<div class="single-team-member wow fadeInUp" id="craig-watts" data-wow-delay="0.4s">
+							<div class="team-hover-effects" id="craig-watts-bio">
+								<div class="member-image team-hover-effects-img">
+									<img src="img/team-img/craig-watts.jpg" alt="Craig Watts">
+								</div>
+								<div class="team-hover-effects-inner">
+									<h4>{{vc[lang].team.i[5].h4}}</h4>
+									<h5>{{vc[lang].team.i[5].h5}}</h5>
+									<p>{{vc[lang].team.i[5].p1}}</p>
+								</div>
+								<div class="team-social-icon">
+									<a href="https://www.linkedin.com/in/craig-watts-0703b/" target="_blank">
+										<i class="fab fa-linkedin-in" aria-hidden="true"></i>
+									</a>
+								</div>
+							</div>
+							<div class="member-image">
+								<img src="img/team-img/craig-watts.jpg" alt="Craig Watts">
+							</div>
+							<div class="member-text">
+								<h4>{{vc[lang].team.i[5].h4}}</h4>
+								<p>{{vc[lang].team.i[5].h5}}</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-3">
+						<div class="single-team-member wow fadeInUp" id="terry-fogarty" data-wow-delay="0.6s">
+							<div class="team-hover-effects" id="terry-fogarty-bio">
+								<div class="member-image team-hover-effects-img">
+									<img src="img/team-img/terry-fogarty.jpg" alt="Terry Fogarty">
+								</div>
+								<div class="team-hover-effects-inner">
+									<h4>{{vc[lang].team.i[6].h4}}</h4>
+									<h5>{{vc[lang].team.i[6].h5}}</h5>
+								</div>
+								<div class="team-social-icon">
+									<a href="https://www.linkedin.com/in/terrence-fogarty-219bb828/" target="_blank">
+										<i class="fab fa-linkedin-in" aria-hidden="true"></i>
+									</a>
+								</div>
+							</div>
+							<div class="member-image">
+								<img src="img/team-img/terry-fogarty.jpg" alt="Terry Fogarty">
+							</div>
+							<div class="member-text">
+								<h4>{{vc[lang].team.i[6].h4}}</h4>
+								<p>{{vc[lang].team.i[6].h5}}</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12 col-md-6 col-lg-3">
+						<div class="single-team-member wow fadeInUp" id="chelsea-rustrum" data-wow-delay="0.8s">
+							<div class="team-hover-effects" id="chelsea-rustrum-bio">
+								<div class="member-image team-hover-effects-img">
+									<img src="img/team-img/chelsea-rustrum.jpg" alt="Chelsea Rustrum">
+								</div>
+								<div class="team-hover-effects-inner">
+									<h4>{{vc[lang].team.i[7].h4}}</h4>
+									<h5>{{vc[lang].team.i[7].h5}}</h5>
+								</div>
+								<div class="team-social-icon">
+									<a href="https://www.linkedin.com/in/chelsearustrum/" target="_blank">
+										<i class="fab fa-linkedin-in" aria-hidden="true"></i>
+									</a>
+								</div>
+							</div>
+							<div class="member-image">
+								<img src="img/team-img/chelsea-rustrum.jpg" alt="Chelsea Rustrum">
+							</div>
+							<div class="member-text">
+								<h4>{{vc[lang].team.i[7].h4}}</h4>
+								<p>{{vc[lang].team.i[7].h5}}</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-3">
+						<div class="single-team-member wow fadeInUp" id="david-passiak" data-wow-delay="0.2s">
+							<div class="team-hover-effects" id="david-passiak-bio">
+								<div class="member-image team-hover-effects-img">
+									<img src="img/team-img/david-passiak.jpg" alt="David Passiak">
+								</div>
+								<div class="team-hover-effects-inner">
+									<h4>{{vc[lang].team.i[8].h4}}</h4>
+									<h5>{{vc[lang].team.i[8].h5}}</h5>
+									<h5>{{vc[lang].team.i[8].p1}}</h5>
+								</div>
+								<div class="team-social-icon">
+									<a href="https://www.linkedin.com/in/dpassiak/" target="_blank">
+										<i class="fab fa-linkedin-in" aria-hidden="true"></i>
+									</a>
+								</div>
+							</div>
+							<div class="member-image">
+								<img src="img/team-img/david-passiak.jpg" alt="David Passiak">
+							</div>
+							<div class="member-text">
+								<h4>{{vc[lang].team.i[8].h4}}</h4>
+								<p>{{vc[lang].team.i[8].h5}}</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-3">
+						<div class="single-team-member wow fadeInUp" id="monette-stephens" data-wow-delay="0.4s">
+							<div class="team-hover-effects" id="monette-stephens-bio">
+								<div class="member-image team-hover-effects-img">
+									<img src="img/team-img/monette-stephens.jpg" alt="Monette Stephens">
+								</div>
+								<div class="team-hover-effects-inner">
+									<h4>{{vc[lang].team.i[9].h4}}</h4>
+									<h5>{{vc[lang].team.i[9].h5}}</h5>
+								</div>
+								<div class="team-social-icon">
+									<a href="https://www.linkedin.com/in/monettestephens/" target="_blank">
+										<i class="fab fa-linkedin-in" aria-hidden="true"></i>
+									</a>
+								</div>
+							</div>
+							<div class="member-image">
+								<img src="img/team-img/monette-stephens.jpg" alt="Monette Stephens">
+							</div>
+							<div class="member-text">
+								<h4>{{vc[lang].team.i[9].h4}}</h4>
+								<p>{{vc[lang].team.i[9].h5}}</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-3">
+						<div class="single-team-member wow fadeInUp" id="amanda-rivera" data-wow-delay="0.6s">
+							<div class="team-hover-effects" id="amanda-rivera-bio">
+								<div class="member-image team-hover-effects-img">
+									<img src="img/team-img/amanda-rivera.jpg" alt="Amanda Rivera">
+								</div>
+								<div class="team-hover-effects-inner">
+									<h4>{{vc[lang].team.i[10].h4}}</h4>
+									<h5>{{vc[lang].team.i[10].h5}}</h5>
+								</div>
+								<div class="team-social-icon">
+									<a href="https://www.linkedin.com/in/amandacrivera/" target="_blank">
+										<i class="fab fa-linkedin-in" aria-hidden="true"></i>
+									</a>
+								</div>
+							</div>
+							<div class="member-image">
+								<img src="img/team-img/amanda-rivera.jpg" alt="Amanda Rivera">
+							</div>
+							<div class="member-text">
+								<h4>{{vc[lang].team.i[10].h4}}</h4>
+								<p>{{vc[lang].team.i[10].h5}}</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- ***** Our Team Area End ***** -->
+
+		<!-- ***** Engineer Area Start ***** -->
+		<!-- 
+		<section class="clients-feedback-area section_padding_100 clearfix" id="engineer">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 text-center">
+						<div class="section-heading">
+							<h2>{{vc[lang].dev.h2}}</h2>
+							<div class="line-shape"></div>
+						</div>
+					</div>
+				</div>
+				<div class="row justify-content-center dev-item wow fadeInUp">
+					<div class="col-lg-2"> </div>
+					<div class="col-lg-2 dev-name">
+						<h4>{{vc[lang].dev.i[0].h4}}</h4>
+					</div>
+					<div class="col-lg-8 dev-bio">
+						<p>{{vc[lang].dev.i[0].p}}</p>
+					</div>
+				</div>
+				<div class="row justify-content-center dev-item wow fadeInUp">
+					<div class="col-lg-2"> </div>
+					<div class="col-lg-2 dev-name">
+						<h4>{{vc[lang].dev.i[1].h4}}</h4>
+					</div>
+					<div class="col-lg-8 dev-bio">
+						<p>{{vc[lang].dev.i[1].p}}</p>
+					</div>
+				</div>
+				<div class="row justify-content-center dev-item wow fadeInUp">
+					<div class="col-lg-2"> </div>
+					<div class="col-lg-2 dev-name">
+						<h4>{{vc[lang].dev.i[2].h4}}</h4>
+					</div>
+					<div class="col-lg-8 dev-bio">
+						<p>{{vc[lang].dev.i[2].p}}</p>
+					</div>
+				</div>
+				<div class="row justify-content-center dev-item wow fadeInUp">
+					<div class="col-lg-2"> </div>
+					<div class="col-lg-2 dev-name">
+						<h4>{{vc[lang].dev.i[3].h4}}</h4>
+					</div>
+					<div class="col-lg-8 dev-bio">
+						<p>{{vc[lang].dev.i[3].p}}</p>
+					</div>
+				</div>
+				<div class="row justify-content-center dev-item wow fadeInUp">
+					<div class="col-lg-2"> </div>
+					<div class="col-lg-2 dev-name">
+						<h4>{{vc[lang].dev.i[4].h4}}</h4>
+					</div>
+					<div class="col-lg-8 dev-bio">
+						<p>{{vc[lang].dev.i[4].p}}</p>
+					</div>
+				</div>
+			</div>
+		</section>
+	   -->
+		<!-- ***** Engineer Area End ***** -->
+
+		<!-- ***** Advisor Area Start ***** -->
+		<section class="our-Team-area bg-white section_padding_100_50 clearfix" id="advisor">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 text-center">
+						<!-- Heading Text  -->
+						<div class="section-heading">
+							<h2>{{vc[lang].aa.h2}}</h2>
+							<div class="line-shape"></div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12 col-md-6 col-lg-3">
+						<div class="single-team-member wow fadeInUp" id="ruxiong-li" data-wow-delay="0.2s">
+							<div class="team-hover-effects" id="ruxiong-li-bio">
+								<div class="member-image team-hover-effects-img">
+									<img src="img/team-img/ruxiong-li.jpg" alt="Ruxiong Li">
+								</div>
+								<div class="team-hover-effects-inner">
+									<h4>{{vc[lang].aa.i[0].h4}}</h4>
+									<h5>{{vc[lang].aa.i[0].h5}}</h5>
+									<p>{{vc[lang].aa.i[0].p1}}</p>
+								</div>
+							</div>
+							<div class="member-image">
+								<img src="img/team-img/ruxiong-li.jpg" alt="Ruxiong Li">
+							</div>
+							<div class="member-text">
+								<h4>{{vc[lang].aa.i[0].h4}}</h4>
+								<p>{{vc[lang].aa.i[0].h5}}</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-3">
+						<div class="single-team-member wow fadeInUp" id="bing-liu" data-wow-delay="0.4s">
+							<div class="team-hover-effects" id="bing-liu-bio">
+								<div class="member-image team-hover-effects-img">
+									<img src="img/team-img/bing-liu.jpg" alt="Bing Liu">
+								</div>
+								<div class="team-hover-effects-inner">
+									<h4>{{vc[lang].aa.i[1].h4}}</h4>
+									<h5>{{vc[lang].aa.i[1].h5}}</h5>
+									<p>{{vc[lang].aa.i[1].p1}}</p>
+								</div>
+								<div class="team-social-icon">
+									<a href="https://www.cs.uic.edu/~liub/" target="_blank">
+										<i class="fab fa-linkedin-in" aria-hidden="true"></i>
+									</a>
+								</div>
+							</div>
+							<div class="member-image">
+								<img src="img/team-img/bing-liu.jpg" alt="Bing Liu">
+							</div>
+							<div class="member-text">
+								<h4>{{vc[lang].aa.i[1].h4}}</h4>
+								<p>{{vc[lang].aa.i[1].h5}}</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-3">
+						<div class="single-team-member wow fadeInUp" id="pierre-he" data-wow-delay="0.6s">
+							<div class="team-hover-effects" id="pierre-he-bio">
+								<div class="member-image team-hover-effects-img">
+									<img src="img/team-img/pierre-he.jpg" alt="Pierre He">
+								</div>
+								<div class="team-hover-effects-inner">
+									<h4>{{vc[lang].aa.i[2].h4}}</h4>
+									<h5>{{vc[lang].aa.i[2].h5}}</h5>
+									<p>{{vc[lang].aa.i[2].p1}}</p>
+								</div>
+							</div>
+							<div class="member-image">
+								<img src="img/team-img/pierre-he.jpg" alt="Pierre He">
+							</div>
+							<div class="member-text">
+								<h4>{{vc[lang].aa.i[2].h4}}</h4>
+								<p>{{vc[lang].aa.i[2].h5}}</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-3">
+						<div class="single-team-member wow fadeInUp" id="ken-huang" data-wow-delay="0.8s">
+							<div class="team-hover-effects" id="ken-huang-bio">
+								<div class="member-image team-hover-effects-img">
+									<img src="img/team-img/ken-huang.jpg" alt="Ken Huang">
+								</div>
+								<div class="team-hover-effects-inner">
+									<h4>{{vc[lang].aa.i[3].h4}}</h4>
+									<h5>{{vc[lang].aa.i[3].h5}}</h5>
+									<p>{{vc[lang].aa.i[3].p1}}</p>
+								</div>
+								<div class="team-social-icon">
+									<a href="https://www.linkedin.com/in/kenhuang8/" target="_blank">
+										<i class="fab fa-linkedin-in" aria-hidden="true"></i>
+									</a>
+								</div>
+							</div>
+							<div class="member-image">
+								<img src="img/team-img/ken-huang.jpg" alt="Ken Huang">
+							</div>
+							<div class="member-text">
+								<h4>{{vc[lang].aa.i[3].h4}}</h4>
+								<p>{{vc[lang].aa.i[3].h5}}</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12 col-md-6 col-lg-3">
+						<div class="single-team-member wow fadeInUp" id="zong-ling" data-wow-delay="0.2s">
+							<div class="team-hover-effects" id="zong-ling-bio">
+								<div class="member-image team-hover-effects-img">
+									<img src="img/team-img/zong-ling.jpg" alt="Zong Ling">
+								</div>
+								<div class="team-hover-effects-inner">
+									<h4>{{vc[lang].aa.i[4].h4}}</h4>
+									<h5>{{vc[lang].aa.i[4].h5}}</h5>
+									<p>{{vc[lang].aa.i[4].p1}}</p>
+								</div>
+								<div class="team-social-icon">
+									<a href="https://www.linkedin.com/in/lingzong/" target="_blank">
+										<i class="fab fa-linkedin-in" aria-hidden="true"></i>
+									</a>
+								</div>
+							</div>
+							<div class="member-image">
+								<img src="img/team-img/zong-ling.jpg" alt="Zong Ling">
+							</div>
+							<div class="member-text">
+								<h4>{{vc[lang].aa.i[4].h4}}</h4>
+								<p>{{vc[lang].aa.i[4].h5}}</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-3">
+						<div class="single-team-member wow fadeInUp" id="liren-chen" data-wow-delay="0.4s">
+							<div class="team-hover-effects" id="liren-chen-bio">
+								<div class="member-image team-hover-effects-img">
+									<img src="img/team-img/liren-chen.jpg" alt="Liren Chen">
+								</div>
+								<div class="team-hover-effects-inner">
+									<h4>{{vc[lang].aa.i[5].h4}}</h4>
+									<h5>{{vc[lang].aa.i[5].h5}}</h5>
+									<p>{{vc[lang].aa.i[5].p1}}</p>
+								</div>
+								<div class="team-social-icon">
+									<a href="https://www.linkedin.com/in/lirenc/" target="_blank">
+										<i class="fab fa-linkedin-in" aria-hidden="true"></i>
+									</a>
+								</div>
+							</div>
+							<div class="member-image">
+								<img src="img/team-img/liren-chen.jpg" alt="Liren Chen">
+							</div>
+							<div class="member-text">
+								<h4>{{vc[lang].aa.i[5].h4}}</h4>
+								<p>{{vc[lang].aa.i[5].h5}}</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-3">
+						<div class="single-team-member wow fadeInUp" id="mingshun-li" data-wow-delay="0.8s">
+							<div class="team-hover-effects" id="mingshun-li-bio">
+								<div class="member-image team-hover-effects-img">
+									<img src="img/team-img/mingshun-li.jpg" alt="Mingshun Li">
+								</div>
+								<div class="team-hover-effects-inner">
+									<h4>{{vc[lang].aa.i[7].h4}}</h4>
+									<h5>{{vc[lang].aa.i[7].h5}}</h5>
+									<p>{{vc[lang].aa.i[7].p1}}</p>
+								</div>
+								<div class="team-social-icon">
+									<a href="https://www.linkedin.com/in/明顺-李-9336a396" target="_blank">
+										<i class="fab fa-linkedin-in" aria-hidden="true"></i>
+									</a>
+								</div>
+							</div>
+							<div class="member-image">
+								<img src="img/team-img/mingshun-li.jpg" alt="Mingshun Li">
+							</div>
+							<div class="member-text">
+								<h4>{{vc[lang].aa.i[7].h4}}</h4>
+								<p>{{vc[lang].aa.i[7].h5}}</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-3">
+						<div class="single-team-member wow fadeInUp" id="deming-cha" data-wow-delay="0.6s">
+							<div class="team-hover-effects" id="deming-cha-bio">
+								<div class="member-image team-hover-effects-img">
+									<img src="img/team-img/deming-cha.jpg" alt="Deming Cha">
+								</div>
+								<div class="team-hover-effects-inner">
+									<h4>{{vc[lang].aa.i[6].h4}}</h4>
+									<h5>{{vc[lang].aa.i[6].h5}}</h5>
+									<p>{{vc[lang].aa.i[6].p1}}</p>
+								</div>
+								<div class="team-social-icon">
+									<a href="https://www.linkedin.com/in/demingcha/" target="_blank">
+										<i class="fab fa-linkedin-in" aria-hidden="true"></i>
+									</a>
+								</div>
+							</div>
+							<div class="member-image">
+								<img src="img/team-img/deming-cha.jpg" alt="Deming Cha">
+							</div>
+							<div class="member-text">
+								<h4>{{vc[lang].aa.i[6].h4}}</h4>
+								<p>{{vc[lang].aa.i[6].h5}}</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- ***** Advisor Area End ***** -->
+
+		<!-- ***** Partner Start ***** -->
+		<section class="bg-white section_padding_50" id="partners">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="section-heading text-center">
+							<h2>{{vc[lang].partners.h2}}</h2>
+							<div class="line-shape"></div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12 col-md-3">
+						<div class="text-center wow fadeInUp" data-wow-delay="0.2s">
+							<div class="single-icon partner-logo">
+								<img src="img/partner-img/blockchain.jpg" alt="BlockChain at Berkeley">
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-3">
+						<div class="text-center wow fadeInUp" data-wow-delay="0.4s">
+							<div class="single-icon partner-logo">
+								<img src="img/partner-img/blockapps.jpg" alt="BlockApps">
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-3">
+						<div class="text-center wow fadeInUp" data-wow-delay="0.6s">
+							<div class="single-icon partner-logo">
+								<img src="img/partner-img/ethereum-ai.jpg" alt="ethereum AI">
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-3">
+						<div class="text-center wow fadeInUp" data-wow-delay="0.8s">
+							<div class="single-icon partner-logo">
+								<img src="img/partner-img/paper-weekly.jpg" alt="paper weekly">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12 col-md-3">
+						<div class="text-center wow fadeInUp" data-wow-delay="0.2s">
+							<div class="single-icon partner-logo">
+								<img src="img/partner-img/amazon.jpg" alt="amazon">
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-3">
+						<div class="text-center wow fadeInUp" data-wow-delay="0.4s">
+							<div class="single-icon partner-logo">
+								<img src="img/partner-img/chainqa.png" alt="ChainQA">
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-3">
+						<div class="text-center wow fadeInUp" data-wow-delay="0.6s">
+							<div class="single-icon partner-logo">
+								<img src="img/partner-img/cointime.jpg" alt="cointime">
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-3">
+						<div class="text-center wow fadeInUp" data-wow-delay="0.8s">
+							<div class="single-icon partner-logo">
+								<img src="img/partner-img/forbes.jpg" alt="Forbes">
+							</div>
+						</div>
+					</div>
+					<!--
+					<div class="col-12 col-md-3">
+						<div class="text-center wow fadeInUp" data-wow-delay="0.4s">
+							<div class="single-icon partner-logo">
+								<img src="img/partner-img/kexiang.jpg" alt="科翔资本">
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-3">
+						<div class="text-center wow fadeInUp" data-wow-delay="0.6s">
+							<div class="single-icon partner-logo">
+								<img src="img/partner-img/chinarun.jpg" alt="犇逺資本">
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-3">
+						<div class="text-center wow fadeInUp" data-wow-delay="0.8s">
+							<div class="single-icon partner-logo">
+								<img src="img/partner-img/hanjing.jpg" alt="汉景家族办公室">
+							</div>
+						</div>
+					</div>
+				</div>
+				-->
+					<!--
+				<div class="row">
+					<div class="col-12 col-md-3">
+						<div class="text-center wow fadeInUp" data-wow-delay="0.2s">
+							<div class="single-icon partner-logo">
+								<img src="img/partner-img/naba.jpg" alt="North American Blockchain Association">
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-3">
+						<div class="text-center wow fadeInUp" data-wow-delay="0.4s">
+							<div class="single-icon partner-logo">
+								<img src="img/partner-img/liebao.jpg" alt="猎豹移动">
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-3">
+						<div class="text-center wow fadeInUp" data-wow-delay="0.6s">
+							<div class="single-icon partner-logo">
+								<img src="img/partner-img/jinsecaijin.jpg" alt="金色财经">
+							</div>
+						</div>
+					</div>
+				</div>
+				-->
+				</div>
+		</section>
+		<!-- ***** Partner End ***** -->
+
+		<!-- ***** Footer Area Start ***** -->
+		<footer class="footer-social-icon text-center section_padding_70 clearfix">
+			<!-- footer logo -->
+			<div class="footer-img">
+				<img src="img/core-img/logo-3.png" alt="Voicecoin" id="footer-logo">
+			</div>
+			<div class="footer-text">
+				<h3>VOICECOIN</h3>
+			</div>
+			<!-- social icon-->
+			<div class="footer-social-icon">
+				<a href="https://www.facebook.com/pg/Voicecoin-734082453452451" target="_blank">
+					<i class="fab fa-facebook-f" aria-hidden="true"></i>
+				</a>
+				<a href="https://twitter.com/voicecoin" target="_blank">
+					<i class="fab fa-twitter" aria-hidden="true"></i>
+				</a>
+				<a href="https://www.linkedin.com/company/voicecoin/" target="_blank">
+					<i class="fab fa-linkedin-in" aria-hidden="true"></i>
+				</a>
+				<!-- <a href="https://github.com/voicecoin" target="_blank">
+					<i class="fab fa-github-alt" aria-hidden="true"></i> -->
+				</a>
+				<a href="https://t.me/voicecoin" target="_blank">
+					<i class="active fab fa-telegram-plane" aria-hidden="true"></i>
+				</a>
+				<a href="mailto:support@voicecoin.com" target="_blank">
+					<i class="far fa-envelope" aria-hidden="true"></i>
+				</a>
+				<a id="wechat">
+					<i class="fab fa-weixin" aria-hidden="true"></i>
+				</a>
+			</div>
+			<div class="footer-menu">
+				<nav>
+					<ul>
+						<li>
+							<a :href='vc[lang].foot.gistpaper' target="_blank">{{vc[lang].foot.gist}}</a>
+						</li>
+						<li>
+							<a href="https://medium.com/voicecoin" target="_blank">{{vc[lang].foot.medium}}</a>
+						</li>
+						<li>
+							<a href="https://github.com/voicecoin" target="_blank">{{vc[lang].foot.git}}</a>
+						</li>
+						<li>
+							<a href="mailto:support@voicecoin.com">{{vc[lang].foot.contact}}</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<!-- Foooter Text-->
+			<div class="copyright-text">
+				<!-- ***** Removing this text is now allowed! This template is licensed under CC BY 3.0 ***** -->
+				<p>Copyright ©2018
+					<a href="http://www.voiceweb.io/" target="_blank">{{vc[lang].foot.vf}}</a>{{vc[lang].foot.dot}} {{vc[lang].foot.right}}
+				</p>
+			</div>
+		</footer>
+		<!-- ***** Footer Area Start ***** -->
+		</div>
+		<!-- Jquery-2.2.4 JS -->
+		<script src="js/jquery-2.2.4.min.js"></script>
+		<!-- Popper js -->
+		<script src="js/popper.min.js"></script>
+
+		<!-- Bootstrap-4 Beta JS -->
+		<script src="js/bootstrap.min.js"></script>
+		<!-- All Plugins JS -->
+		<script src="js/plugins.js"></script>
+		<!-- Slick Slider Js-->
+		<script src="js/slick.min.js"></script>
+		<!-- Footer Reveal JS -->
+		<script src="js/footer-reveal.min.js"></script>
+		<!-- Active JS -->
+		<script src="js/active.js"></script>
+		<!-- Device Detected JS -->
+		<script src="js/device.js"></script>
+		<!-- Vue js -->
+		<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+		<!-- Custom JS -->
+		<script src="js/custom.js"></script>
+		<!-- I18 JS -->
+		<script src="js/i18.js?1=2"></script>
+</body>
+
+</html>
