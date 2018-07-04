@@ -4,13 +4,13 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="description" content="Voicecoin is the cryptocurrency used on the Voiceweb platform and is also the first phase of the Voiceweb project.">
-	<meta name="keywords" content="Voicecoin, Voiceweb, vc, voice, web, ico, AI, cryptocurrency, artificial intelligence, 语音币, IoT, 物联网, chatbot, voice domain, voice browser, DBot, blockchain">
+	<meta name="keywords" content="Voicechain, Voiceweb, vc, voice, web, ico, AI, cryptocurrency, artificial intelligence, 语音币, IoT, 物联网, chatbot, voice domain, voice browser, DBot, blockchain">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
 	<!-- Title -->
-	<title>VOICECOIN</title>
+	<title>VOICECHAIN</title>
 
 	<!-- Favicon -->
 	<link rel="icon" href="favicon.ico">
@@ -39,7 +39,7 @@
 							<nav class="navbar navbar-expand-lg navbar-light">
 								<!-- Logo -->
 								<a class="navbar-brand" href="index.html">
-									<img src="img/core-img/logo.png" alt="Voicecoin">
+									<img src="img/core-img/logo-cn.png" alt="Voicecoin">
 								</a>
 								<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ca-navbar" aria-controls="ca-navbar" aria-expanded="false"
 								    aria-label="Toggle navigation">
@@ -52,13 +52,22 @@
 											<a class="nav-link" href="javascript:void(0)" @click="goAnchor('#home')">{{vc[lang].header.home}}</a>
 										</li>
 										<li class="nav-item">
+											<a class="nav-link" href="javascript:void(0)" @click="goAnchor('#solution')">{{vc[lang].header.about}}</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="javascript:void(0)" @click="goAnchor('#feature')">{{vc[lang].header.feat}}</a>
+										</li>
+										<li class="nav-item">
 											<a class="nav-link" href="javascript:void(0)" @click="goAnchor('#team')">{{vc[lang].header.team}}</a>
 										</li>
 										<!--<li class="nav-item">
 											<a class="nav-link" href="http://contribute.voicecoin.com/" target="_blank">{{vc[lang].header.token}}</a>
 										</li>-->
-										<li class="nav-item">
+										<!-- <li class="nav-item">
 											<a class="nav-link" href="foundation.html">{{vc[lang].header.found}}</a>
+										</li> -->
+										<li class="nav-item">
+											<a class="nav-link" href="doc/Voicecoin_Whitepaper.pdf" download="Voicecoin_Whitepaper_ENG">{{vc[lang].header.white}}</a>
 										</li>
 										<li class="nav-item">
 											<a class="nav-link" href="http://voicechain.io/" target="_blank">{{vc[lang].header.test}}</a>
@@ -99,16 +108,15 @@
 			</div>
 			<!-- Welcome thumb -->
 			<div class="welcome-thumb wow fadeInDown" id="welcome-img" data-wow-delay="0.5s">
-				<img src="img/bg-img/welcome-img-2.svg" alt="VOICECOIN">
+				<img src="img/bg-img/welcome-img-2.svg" alt="VOICECHAIN">
 			</div>
 			<canvas id="welcome-star">
 			</canvas>
-
 		</section>
 		<!-- ***** Wellcome Area End ***** -->
 
 		<!-- ***** Special Area Start ***** -->
-		<section class="special-area bg-white section_padding_100" id="about">
+		<section class="special-area bg-white section_padding_100" id="about" style="display:none;">
 			<!-- Special Description Area -->
 			<div class="special_description_area ">
 				<div class="container">
@@ -158,12 +166,12 @@
 		<!-- ***** Special Area End ***** -->
 
 		<!-- ***** Video #1 Area Start ***** -->
-		<div class="video-section bg-white">
+		<div class="video-section bg-white section_padding_100" id="about-video">
 			<div class="container">
 				<div class="row">
 					<div class="col-12">
-						<video poster="img/bg-img/video-1.jpg" src="https://endaye.github.io/web-voicecoin-new/video/video-1.mp4" type="video/mp4"
-						    width="100%" height="auto" controls="true" class="video" id="video-1">
+						<video poster="img/bg-img/video-1.jpg" src="/video/video-1.mp4" type="video/mp4" width="100%" height="auto" controls="true"
+						    class="video" id="video-1">
 						</video>
 					</div>
 				</div>
@@ -172,7 +180,7 @@
 		<!-- ***** Video #1 Area End ***** -->
 
 		<!-- ***** Problem Start ***** -->
-		<section class="bg-white section_padding_100" id="problem">
+		<section class="bg-white section_padding_100" id="problem" style="display:none;">
 			<div class="container">
 				<div class="row">
 					<div class="col-12">
@@ -228,7 +236,7 @@
 		<!-- ***** Problem End ***** -->
 
 		<!-- ***** Solution Start ***** -->
-		<section class="section_padding_50" id="solution">
+		<section class="section_padding_100_50" id="solution">
 			<div class="container">
 				<div class="row">
 					<div class="col-12">
@@ -243,8 +251,11 @@
 					<div class="col-1"></div>
 					<div class="col-10 wow text-center fadeInUp sub-title">
 						<h4>{{vc[lang].sl.h4}}</h4>
-						<p>{{vc[lang].sl.p1}}</p>
-						<p>{{vc[lang].sl.p2}}</p>
+						<br>
+						<div class="text-justify">
+							<p>{{vc[lang].sl.p1}}</p>
+							<p>{{vc[lang].sl.p2}}</p>
+						</div>
 					</div>
 				</div>
 				<div class="row">
@@ -283,8 +294,22 @@
 		</section>
 		<!-- ***** Solution End ***** -->
 
+		<!-- ***** Video #2 Area Start ***** -->
+		<div class="video-section bg-white section_padding_100">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<video poster="img/bg-img/video-4.jpg" src="/video/video-3.mp4" type="video/mp4" width="100%" height="auto" controls="true"
+						    class="video" id="video-3">
+						</video>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- ***** Video #2 Area End ***** -->
+
 		<!-- ***** Schematic Area Start ***** -->
-		<section class="section_padding_50 bg-white" id="schematic">
+		<section class="section_padding_50 bg-white" id="schematic" style="display:none;">
 			<div class="container">
 				<div class="row">
 					<div class="col-12">
@@ -311,17 +336,20 @@
 					</div>
 					<!-- Single Special Area -->
 					<div class="col-12 col-md-6">
-						<div class="single-special text-center wow fadeInUp step-text" data-wow-delay="0.2s">
-							<h1>1</h1>
+						<div class="single-special wow fadeInUp step-text" data-wow-delay="0.2s">
+							<br>
 							<p>{{vc[lang].sch.i[0].p}}</p>
-							<h1>2</h1>
+							<br>
+							<br>
 							<p>{{vc[lang].sch.i[1].p}}</p>
-							<h1>3</h1>
+							<br>
+							<br>
 							<p>{{vc[lang].sch.i[2].p}}</p>
+							<br>
 						</div>
 						<!-- Video Area Start -->
-						<video src="https://endaye.github.io/web-voicecoin-new/video/video-2.mp4" type="video/mp4" poster="img/bg-img/video-4.jpg"
-						    width="100%" height="auto" controls="true" class="video" id="video-2" preload="none">
+						<video src="/video/video-3.mp4" type="video/mp4" poster="img/bg-img/video-4.jpg" width="100%" height="auto" controls="true"
+						    class="video" id="video-2" preload="none">
 						</video>
 					</div>
 				</div>
@@ -330,7 +358,7 @@
 		<!-- ***** Schematic Area End *****====== -->
 
 		<!-- ***** Awesome Features Start ***** -->
-		<section class="bg-white section_padding_50" id="feature">
+		<section class="bg-white section_padding_100_50" id="feature">
 			<div class="container">
 				<div class="row">
 					<div class="col-12">
@@ -420,7 +448,7 @@
 						<div class="single-team-member wow fadeInUp" id="george-zhao" data-wow-delay="0.2s">
 							<div class="team-hover-effects" id="george-zhao-bio">
 								<div class="member-image team-hover-effects-img">
-									<img src="img/team-img/george-zhao-1.jpg" alt="George Zhao">
+									<img src="img/team-img/george-zhao-2.jpg" alt="George Zhao">
 								</div>
 								<div class="team-hover-effects-inner">
 									<h4>{{vc[lang].team.i[0].h4}}</h4>
@@ -434,7 +462,7 @@
 								</div>
 							</div>
 							<div class="member-image">
-								<img src="img/team-img/george-zhao-1.jpg" alt="George Zhao">
+								<img src="img/team-img/george-zhao-2.jpg" alt="George Zhao">
 							</div>
 							<div class="member-text">
 								<h4>{{vc[lang].team.i[0].h4}}</h4>
@@ -442,6 +470,80 @@
 							</div>
 						</div>
 					</div>
+					<div class="col-12 col-md-6 col-lg-3">
+						<div class="single-team-member wow fadeInUp" id="craig-watts" data-wow-delay="0.4s">
+							<div class="team-hover-effects" id="craig-watts-bio">
+								<div class="member-image team-hover-effects-img">
+									<img src="img/team-img/craig-watts.jpg" alt="Craig Watts">
+								</div>
+								<div class="team-hover-effects-inner">
+									<h4>{{vc[lang].team.i[5].h4}}</h4>
+									<h5>{{vc[lang].team.i[5].h5}}</h5>
+									<p>{{vc[lang].team.i[5].p1}}</p>
+								</div>
+								<div class="team-social-icon">
+									<a href="https://www.linkedin.com/in/craig-watts-0703b/" target="_blank">
+										<i class="fab fa-linkedin-in" aria-hidden="true"></i>
+									</a>
+								</div>
+							</div>
+							<div class="member-image">
+								<img src="img/team-img/craig-watts.jpg" alt="Craig Watts">
+							</div>
+							<div class="member-text">
+								<h4>{{vc[lang].team.i[5].h4}}</h4>
+								<p>{{vc[lang].team.i[5].h5}}</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-3">
+						<div class="single-team-member wow fadeInUp" id="terry-fogarty" data-wow-delay="0.6s">
+							<div class="team-hover-effects" id="terry-fogarty-bio">
+								<div class="member-image team-hover-effects-img">
+									<img src="img/team-img/terry-fogarty.jpg" alt="Terry Fogarty">
+								</div>
+								<div class="team-hover-effects-inner">
+									<h4>{{vc[lang].team.i[6].h4}}</h4>
+									<h5>{{vc[lang].team.i[6].h5}}</h5>
+								</div>
+								<div class="team-social-icon">
+									<a href="https://www.linkedin.com/in/terrence-fogarty-219bb828/" target="_blank">
+										<i class="fab fa-linkedin-in" aria-hidden="true"></i>
+									</a>
+								</div>
+							</div>
+							<div class="member-image">
+								<img src="img/team-img/terry-fogarty.jpg" alt="Terry Fogarty">
+							</div>
+							<div class="member-text">
+								<h4>{{vc[lang].team.i[6].h4}}</h4>
+								<p>{{vc[lang].team.i[6].h5}}</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-3">
+						<div class="single-team-member wow fadeInUp" id="kyle-bao" data-wow-delay="0.8s">
+							<div class="team-hover-effects" id="kyle-bao-bio">
+								<div class="member-image team-hover-effects-img">
+									<img src="img/team-img/kyle-bao.jpg" alt="Kyle Bao">
+								</div>
+								<div class="team-hover-effects-inner">
+									<h4>{{vc[lang].team.i[3].h4}}</h4>
+									<h5>{{vc[lang].team.i[3].h5}}</h5>
+									<p>{{vc[lang].team.i[3].p1}}</p>
+								</div>
+							</div>
+							<div class="member-image">
+								<img src="img/team-img/kyle-bao.jpg" alt="Kyle Bao">
+							</div>
+							<div class="member-text">
+								<h4>{{vc[lang].team.i[3].h4}}</h4>
+								<p>{{vc[lang].team.i[3].h5}}</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
 					<div class="col-12 col-md-6 col-lg-3">
 						<div class="single-team-member wow fadeInUp" id="elaine-shao" data-wow-delay="0.4s">
 							<div class="team-hover-effects" id="elaine-shao-bio">
@@ -510,29 +612,6 @@
 							</div>
 						</div>
 					</div>
-				</div>
-				<div class="row">
-					<div class="col-12 col-md-6 col-lg-3">
-						<div class="single-team-member wow fadeInUp" id="kyle-bao" data-wow-delay="0.8s">
-							<div class="team-hover-effects" id="kyle-bao-bio">
-								<div class="member-image team-hover-effects-img">
-									<img src="img/team-img/kyle-bao.jpg" alt="Kyle Bao">
-								</div>
-								<div class="team-hover-effects-inner">
-									<h4>{{vc[lang].team.i[3].h4}}</h4>
-									<h5>{{vc[lang].team.i[3].h5}}</h5>
-									<p>{{vc[lang].team.i[3].p1}}</p>
-								</div>
-							</div>
-							<div class="member-image">
-								<img src="img/team-img/kyle-bao.jpg" alt="Kyle Bao">
-							</div>
-							<div class="member-text">
-								<h4>{{vc[lang].team.i[3].h4}}</h4>
-								<p>{{vc[lang].team.i[3].h5}}</p>
-							</div>
-						</div>
-					</div>
 					<div class="col-12 col-md-6 col-lg-3">
 						<div class="single-team-member wow fadeInUp" id="joyce-zhang" data-wow-delay="0.2s">
 							<div class="team-hover-effects" id="joyce-zhang-bio">
@@ -556,58 +635,6 @@
 							<div class="member-text">
 								<h4>{{vc[lang].team.i[4].h4}}</h4>
 								<p>{{vc[lang].team.i[4].h5}}</p>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-12 col-md-6 col-lg-3">
-						<div class="single-team-member wow fadeInUp" id="craig-watts" data-wow-delay="0.4s">
-							<div class="team-hover-effects" id="craig-watts-bio">
-								<div class="member-image team-hover-effects-img">
-									<img src="img/team-img/craig-watts.jpg" alt="Craig Watts">
-								</div>
-								<div class="team-hover-effects-inner">
-									<h4>{{vc[lang].team.i[5].h4}}</h4>
-									<h5>{{vc[lang].team.i[5].h5}}</h5>
-									<p>{{vc[lang].team.i[5].p1}}</p>
-								</div>
-								<div class="team-social-icon">
-									<a href="https://www.linkedin.com/in/craig-watts-0703b/" target="_blank">
-										<i class="fab fa-linkedin-in" aria-hidden="true"></i>
-									</a>
-								</div>
-							</div>
-							<div class="member-image">
-								<img src="img/team-img/craig-watts.jpg" alt="Craig Watts">
-							</div>
-							<div class="member-text">
-								<h4>{{vc[lang].team.i[5].h4}}</h4>
-								<p>{{vc[lang].team.i[5].h5}}</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-12 col-md-6 col-lg-3">
-						<div class="single-team-member wow fadeInUp" id="terry-fogarty" data-wow-delay="0.6s">
-							<div class="team-hover-effects" id="terry-fogarty-bio">
-								<div class="member-image team-hover-effects-img">
-									<img src="img/team-img/terry-fogarty.jpg" alt="Terry Fogarty">
-								</div>
-								<div class="team-hover-effects-inner">
-									<h4>{{vc[lang].team.i[6].h4}}</h4>
-									<h5>{{vc[lang].team.i[6].h5}}</h5>
-								</div>
-								<div class="team-social-icon">
-									<a href="https://www.linkedin.com/in/terrence-fogarty-219bb828/" target="_blank">
-										<i class="fab fa-linkedin-in" aria-hidden="true"></i>
-									</a>
-								</div>
-							</div>
-							<div class="member-image">
-								<img src="img/team-img/terry-fogarty.jpg" alt="Terry Fogarty">
-							</div>
-							<div class="member-text">
-								<h4>{{vc[lang].team.i[6].h4}}</h4>
-								<p>{{vc[lang].team.i[6].h5}}</p>
 							</div>
 						</div>
 					</div>
@@ -1129,7 +1156,7 @@
 				<img src="img/core-img/logo-3.png" alt="Voicecoin" id="footer-logo">
 			</div>
 			<div class="footer-text">
-				<h3>VOICECOIN</h3>
+				<h3>VOICECHAIN</h3>
 			</div>
 			<!-- social icon-->
 			<div class="footer-social-icon">

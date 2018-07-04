@@ -34,16 +34,19 @@ var app = new Vue({
 		vc: {
 			en: {
 				header: {
-					home: 'Home',
-					team: 'Team',
-					token: 'Token Sale',
-					found: 'Foundation',
-					test: 'Testnet',
+					home: 'HOME',
+					about: 'ABOUT',
+					team: 'TEAM',
+					feat: 'FEATURES',
+					token: 'TOKEN SALE',
+					found: 'FOUNDATION',
+					test: 'TESTNET',
+					white: 'WHITEPAPER',
 					faq: 'FAQ',
 					lang: '中文'
 				},
 				wel: {
-					title: 'Welcome to Voiceweb\'s ICO',
+					title: 'Welcome to Voicechain',
 					sub1: 'We\'re building a voice-driven decentralized smart web based on voicechain.',
 					sub2: 'The universal bridge between AI chatbot and IoT.',
 					sub3: 'Voicecoin is the money of Voiceweb.',
@@ -76,7 +79,7 @@ var app = new Vue({
 					]
 				},
 				sl: {
-					h2: 'Our Solution',
+					h2: 'About Voicecoin',
 					h4: 'We propose a blockchain solution to underpin the voice-based Internet',
 					p1: ' Under this new system, chatbot developers will register voice domains on the blockchain, follow a set of simple instructions, and then their chatbots will be launched. In this way, any global user will be able to talk to any registered chatbot. Smart device manufacturers will no longer need to ask chatbot developers to register their chatbots. This solution preserves developer resources, while giving users a more convenient way to surf an open, voice-based internet. As traditional browser-based web sites evolve into chatbots, the traditional domain name system evolves into a decentralized voice domain system, and cryptocurrency becomes the global standard for chatbot payments.',
 					p2: '',
@@ -136,7 +139,7 @@ var app = new Vue({
 					i: [{
 							h4: 'George Zhao',
 							h5: 'Founder, CEO',
-							p1: "A serial entrepreneur, George Zhao developed China's first email system named Kaili. Earlier in his career, George was in charge of the certificates products of Shenda and the streaming media business of Youku, a subsidiary of Alibaba Group. He also operated the earliest Chinese Q & A community of technologies. One of his patents, as a result of his startup in Shanghai was acquired by Tencent and he was reported by sina.com as the inventor mobile IM basic technology and the creator of WeChat. He received his MBA from University of Illinois at Chicago, and studied artificial intelligence and blockchain technology at Stanford University and UC Berkeley. After setting up the Voicebot artificial intelligence platform, he founded Voiceweb based on blockchain technology in Silicon Valley.",
+							p1: "Inventor of WeChat IP, George is an executive member of Blockchain at Berkeley, the CEO of the chatbot development platform Voicebot AI, and a recent dropout from the Stanford Master’s Program in Artificial Intelligence and Cryptography. Before earning an MBA in the US, Jianwen worked for companies including Youku-Tudou (Alibaba), Shanda,and SMS Assist. In late 2017, George published a whitepaper initiating the blockchain voice-based internet together with five leading blockchain developers.",
 						},
 						{
 							h4: 'Elaine Shao',
@@ -220,7 +223,7 @@ var app = new Vue({
 					]
 				},
 				aa: {
-					h2: 'Advisors & Angels (in no particular order)',
+					h2: 'Advisors & Investors',
 					i: [{
 							h4: 'Ruxiong Li',
 							h5: 'Startup Mentor',
@@ -259,7 +262,7 @@ var app = new Vue({
 						{
 							h4: 'Mingshun Li',
 							h5: 'CEO of GOODCHAIN INC.',
-							p1: "",
+							p1: "CEO of Haorong Global Inc. Founder & CEO of Haodai.com.",
 						},
 					],
 				},
@@ -331,15 +334,18 @@ var app = new Vue({
 			zh: {
 				header: {
 					home: '首页',
+					about: '介绍',
 					team: '团队',
+					feat: '特点',
 					token: 'Token发行',
 					found: '基金会',
 					test: '测试网路',
+					white: '白皮书',
 					faq: 'FAQ',
 					lang: 'ENG'
 				},
 				wel: {
-					title: '欢迎参与语音链ICO',
+					title: '欢迎访问语音链',
 					sub1: '我们正在建造语音驱动的去中心化万维网',
 					sub2: '智能语音机器人与物联网之间的桥梁',
 					sub3: '语音币是语音网络的通用货币',
@@ -372,7 +378,7 @@ var app = new Vue({
 					]
 				},
 				sl: {
-					h2: '解决方案',
+					h2: '什么是语音链',
 					h4: '一场颠覆性的语音革命已经到来',
 					p1: '我们首当其冲提出：区块链解决方案来支持语音互联网。我们创造并实现一个真正意义上的说比写快的语音区块链新生代！',
 					p2: '全球化开启语音万维网新纪元，开发者一站式发布语音服务，全世界的公众可以免费享用任何语音服务，实现了真正意义上的语音服务共享。任何用户，可以在世界的任何地方，与已注册的语音服务通话。 智能设备制造商将不再需要请开发者注册他们的语音服务。该方案节省了大量开发资源的同时，也为用户提供了更便捷的方式来浏览开放的语音万维网。随着传统的基于浏览器的网站演变成语音服务，传统域名系统将会进化成去中心化的语音域名系统，加密货币将成为语音服务支付的全球标准。非同凡响，不负众望，就是我们要完成的底层技术。',
@@ -395,13 +401,13 @@ var app = new Vue({
 					h4: '语音网络区块链如何工作？',
 					p1: '语音链是语音万维网上连接所有语音对话服务的基础公链，语音币是语音网络的加密货币。',
 					i: [{
-							p: '您可以在语音网络上注册聊天机器人的全球唯一域名，在这里，唯您独尊。',
+							p: '我们将进入后移动时代，而下一代互联网就是语音互联网。',
 						},
 						{
-							p: '使用语音浏览器呼叫语音服务助理 – 只用语音访问您最喜爱的应用、品牌和功能。',
+							p: '人机交流会像人与人之间的交流一样畅快淋漓，风雨无阻！',
 						},
 						{
-							p: '语音服务全球开放、高度互联，声声有力，尽情享受在语音万维网冲浪的酣畅体验吧！',
+							p: '不同于其他公司的种种设限，语音网打破了传统万维网的局限，人们会很大幅度的降低输入域名和网址的次数。新一代创新语音网的创新则为打破局限和被控无奈而生。',
 						},
 					]
 				},
@@ -516,7 +522,7 @@ var app = new Vue({
 					]
 				},
 				aa: {
-					h2: '顾问 & 天使投资人 (排名不分先后)',
+					h2: '顾问 & 天使投资人',
 					i: [{
 							h4: '李儒雄',
 							h5: '创业导师',
