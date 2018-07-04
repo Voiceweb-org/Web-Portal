@@ -1,2 +1,2 @@
-# voicechain.io
-Web portal of voicechain
+# voicecoin-portal-v2
+Voiceweb web portal
