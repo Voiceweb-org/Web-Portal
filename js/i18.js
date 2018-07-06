@@ -114,7 +114,7 @@ var app = new Vue({
 					]
 				},
 				feat: {
-					h2: 'Voiceweb Blockchain Features',
+					h2: 'Voicechain Features',
 					i: [{
 							h4: 'Decentralized Platform',
 						},
