@@ -435,7 +435,7 @@ var app = new Vue({
 					]
 				},
 				team: {
-					h2: '核心团队',
+					h2: '团队成员',
 					i: [{
 							h4: '赵建文',
 							h5: '创始人',
@@ -567,7 +567,7 @@ var app = new Vue({
 					],
 				},
 				partners: {
-					h2: '合作伙伴'
+					h2: '合作伙伴 / 媒体'
 				},
 				foot: {
 					paper: '白皮书',
