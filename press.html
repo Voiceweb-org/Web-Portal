@@ -34,7 +34,7 @@
 							<nav class="navbar navbar-expand-lg navbar-light">
 								<!-- Logo -->
 								<a class="navbar-brand" href="index.html">
-									<img src="img/core-img/logo-cn.png" alt="Voicecoin">
+									<img src="img/core-img/logo-cn.png" alt="Voicechain">
 								</a>
 								<button class="navbar-toggler" type="button" data-target="#ca-navbar" aria-controls="ca-navbar" aria-expanded="false" aria-label="Toggle navigation">
 									<span class="navbar-toggler-icon"></span>
@@ -54,6 +54,9 @@
 										<li class="nav-item">
 											<a class="nav-link" href="http://www.voicecoin.net/" target="_blank">{{vc[lang].header.test}}</a>
 										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="javascript:void(0)" @click="goAnchor('#faq')">{{vc[lang].header.faq}}</a>
+										</li>
 									</ul>
 								</div>
 							</nav>
@@ -71,118 +74,22 @@
 					<div class="col-12">
 						<!-- Section Heading Area -->
 						<div class="section-heading text-center">
-							<h2>{{vc[lang].faq.title}}</h2>
+							<h2>语音链专访</h2>
 							<div class="line-shape"></div>
 						</div>
 					</div>
 				</div>
-				<div class="row">
+				<div class="row" v-for="item in press">
 					<div class="col-12">
-						<div class="question" data-target="#answer-01">
-							<i class="far fa-question-circle"></i>
-							<h6>{{vc[lang].faq.q01}}</h6>
+						<div id="answer-01" class="question">
+							<h5><a v-bind:href="item.url" target="_blank">{{item.header}}</a></h5>
+							<p>
+									机器能听懂人类的语言吗？脱离鼠标、键盘后，我们能用语言操控计算机吗？随着语音识别技术的发展，消费者解放双手与机器设备交流的梦想正在变为现实，语音搜索是一个必然的趋势。
+							</p>
 						</div>
-						<div id="answer-01" class="answer">
-							<p>{{vc[lang].faq.a01}}</p>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-12">
-						<div class="question" data-target="#answer-02">
-							<i class="far fa-question-circle"></i>
-							<h6>{{vc[lang].faq.q02}}</h6>
-						</div>
-						<div id="answer-02" class="answer">
-							<p>{{vc[lang].faq.a02}}</p>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-12">
-						<div class="question" data-target="#answer-03">
-							<i class="far fa-question-circle"></i>
-							<h6>{{vc[lang].faq.q03}}</h6>
-						</div>
-						<div id="answer-03" class="answer">
-							<p>{{vc[lang].faq.a03}}</p>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-12">
-						<div class="question" data-target="#answer-04">
-							<i class="far fa-question-circle"></i>
-							<h6>{{vc[lang].faq.q04}}</h6>
-						</div>
-						<div id="answer-04" class="answer">
-							<p>{{vc[lang].faq.a04}}</p>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-12">
-						<div class="question" data-target="#answer-05">
-							<i class="far fa-question-circle"></i>
-							<h6>{{vc[lang].faq.q05}}</h6>
-						</div>
-						<div id="answer-05" class="answer">
-							<p>{{vc[lang].faq.a05}}</p>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-12">
-						<div class="question" data-target="#answer-06">
-							<i class="far fa-question-circle"></i>
-							<h6>{{vc[lang].faq.q06}}</h6>
-						</div>
-						<div id="answer-06" class="answer">
-							<p>{{vc[lang].faq.a06}}</p>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-12">
-						<div class="question" data-target="#answer-07">
-							<i class="far fa-question-circle"></i>
-							<h6>{{vc[lang].faq.q07}}</h6>
-						</div>
-						<div id="answer-07" class="answer">
-							<p>{{vc[lang].faq.a07}}</p>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-12">
-						<div class="question" data-target="#answer-08">
-							<i class="far fa-question-circle"></i>
-							<h6>{{vc[lang].faq.q08}}</h6>
-						</div>
-						<div id="answer-08" class="answer">
-							<p>{{vc[lang].faq.a08}}</p>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-12">
-						<div class="question" data-target="#answer-09">
-							<i class="far fa-question-circle"></i>
-							<h6>{{vc[lang].faq.q09}}</h6>
-						</div>
-						<div id="answer-09" class="answer">
-							<p>{{vc[lang].faq.a09}}</p>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-12">
-						<div class="question" data-target="#answer-10">
-							<i class="far fa-question-circle"></i>
-							<h6>{{vc[lang].faq.q10}}</h6>
-						</div>
-						<div id="answer-10" class="answer">
-							<p>{{vc[lang].faq.a10}}</p>
+						<div  class="answer" data-target="#answer-01">
+							<span>{{item.from}}</span>
+							<span style="margin-left: 10px; color: lightgrey">{{item.date}}</span>
 						</div>
 					</div>
 				</div>
@@ -280,3 +187,4 @@
 </body>
 
 </html>
+

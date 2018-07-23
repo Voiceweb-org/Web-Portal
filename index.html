@@ -91,9 +91,6 @@
 										<li class="nav-item">
 											<a class="nav-link" href="faq.html">{{vc[lang].header.faq}}</a>
 										</li>
-										<li class="nav-item">
-											<a class="nav-lang" href="http://voicecoin.io/">{{vc[lang].header.lang}}</a>
-										</li>
 									</ul>
 								</div>
 							</nav>
@@ -1048,7 +1045,7 @@
 				<div class="row">
 					<div class="col-12">
 						<div class="section-heading text-center">
-							<h2>{{vc[lang].partners.h2}}</h2>
+							<h2>合作伙伴</h2>
 							<div class="line-shape"></div>
 						</div>
 					</div>
@@ -1094,7 +1091,7 @@
 					<div class="col-12 col-md-4">
 						<div class="text-center wow fadeInUp" data-wow-delay="0.6s">
 							<div class="single-icon partner-logo">
-								<img src="img/partner-img/forbes.jpg" alt="Forbes">
+								<img src="img/partner-img/nodecap.com.png" alt="Node Capital">
 							</div>
 						</div>
 					</div>
@@ -1102,6 +1099,30 @@
 			</div>
 		</section>
 		<!-- ***** Partner End ***** -->
+
+		<!-- ***** Partner Start ***** -->
+		<section class="bg-white section_padding_50" id="press">
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+							<div class="section-heading text-center">
+								<h2>媒体</h2>
+								<div class="line-shape"></div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12 col-md-2" v-for="item in press">
+							<div class="text-center wow fadeInUp" data-wow-delay="0.2s">
+								<div class="single-icon partner-logo">
+									<a v-bind:href="item.url" target="_blank"><img v-bind:src="item.logo" v-bind:alt="item.from"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- ***** Partner End ***** -->
 
 		<!-- ***** Footer Area Start ***** -->
 		<footer class="footer-social-icon text-center section_padding_70 clearfix">
@@ -1135,6 +1156,9 @@
 				<a id="wechat">
 					<i class="fab fa-weixin" aria-hidden="true"></i>
 				</a>
+				<a  href="https://medium.com/voicecoin" target="_blank">
+					<i class="fab fa-medium" aria-hidden="true"></i>
+				</a>
 			</div>
 			<div class="footer-menu">
 				<nav>
@@ -1143,13 +1167,13 @@
 							<a :href='vc[lang].foot.gistpaper' target="_blank">{{vc[lang].foot.gist}}</a>
 						</li>
 						<li>
-							<a href="https://medium.com/voicecoin" target="_blank">{{vc[lang].foot.medium}}</a>
-						</li>
-						<li>
 							<a href="https://github.com/voicecoin" target="_blank">{{vc[lang].foot.git}}</a>
 						</li>
 						<li>
 							<a href="mailto:support@voicecoin.com">{{vc[lang].foot.contact}}</a>
+						</li>
+						<li>
+							<a class="nav-lang" href="http://voicecoin.io/">English</a>
 						</li>
 					</ul>
 				</nav>

@@ -651,7 +651,29 @@ var app = new Vue({
 					}
 				},
 			}
-		}
+		},
+		press: [
+			{ from: "新浪网", date: "2018-07-17 17:43:12", logo:"img/press-img/sina.jpg", url: "http://vr.sina.com.cn/news/hz/2018-07-17/doc-ihfkffam4198375.shtml", header: "与137亿设备语音对话的时代, 这个“微信”专利创始人是如何做到的？"},
+			{ from: "网易", date: "2018-07-19 10:23:12", logo:"img/press-img/netease.jpg", url: "http://bj.news.163.com/18/0719/10/DN2PUP7K043897TC.html", header: "与137亿设备语音对话的语音链是如何做到的？"},
+			{ from: "凤凰网商业", date: "2018-07-19 11:55:08", logo:"img/press-img/hhsyw.png", url: "http://biz.ifeng.com/a/20180719/45070765_0.shtml", header: "与137亿设备语音对话的语音链是如何做到的？"},
+			{ from: "中华网", date: "2018-07-17 17:48:21", logo:"img/press-img/china.com.png", url: "https://finance.china.com/hyzx/20000618/20180717/25241593.html", header: "与137亿设备语音对话的时代, 这个“微信”专利创始人是如何做到的？"},
+			{ from: "比特网", date: "2018-07-19 11:55:08", logo:"img/press-img/chinabyte.png", url: "http://hea.chinabyte.com/166/14552166.shtml", header: "与137亿设备语音对话的语音链是如何做到的？"},
+			{ from: "福布斯", date: "2018-03-12 12:09:00", logo:"img/press-img/forbes.jpg", url: "http://3g.forbeschina.com/review/201803/0066493.shtml", header: "与137亿设备语音对话的语音链是如何做到的？"},
+			{ from: "金融界", date: "2018-07-19 09:59:00", logo:"img/press-img/jrj.jpg", url: "http://biz.jrj.com.cn/2018/07/19113124837452.shtml", header: "与137亿设备语音对话的语音链是如何做到的？"},
+			{ from: "华尔街财经", date: "2018-07-20 22:42:19", logo:"img/press-img/xy178.com.png", url: "http://www.xy178.com/gs/2018/0720/gs061627897.html", header: "与137亿设备语音对话的语音链是如何做到的？"},
+			{ from: "中国日报网", date: "2018-07-19 11:34:31", logo:"img/press-img/chinadialy.com.jpg", url: "http://tech.chinadaily.com.cn/2018-07/19/content_36607090.htm", header: "与137亿设备语音对话的语音链是如何做到的？"},
+			{ from: "比特之窗", date: "2018-07-17 17:51:00", logo:"img/press-img/btc789.com.jpg", url: "http://www.btc789.com/show-10-7647-1.html", header: "与137亿设备语音对话的时代, 这个“微信”专利创始人是如何做到的？"},
+			{ from: "金色财经", date: "2018-07-19 11:01:00", logo:"img/press-img/jscj.jpg", url: "https://www.jinse.com/bitcoin/215386.html", header: "与137亿设备语音对话的语音链是如何做到的？"},
+			{ from: "263财富网", date: "2018-07-17 17:56:00", logo:"img/press-img/ysslc.com.png", url: "https://www.ysslc.com/caijing/xinwen/1494874.html", header: "与137亿设备语音对话的时代, 这个“微信”专利创始人是如何做到的？"},
+			{ from: "每日财经网", date: "2018-07-19 09:59:00", logo:"img/press-img/mrcjcn.com.png", url: "http://www.mrcjcn.com/n/279712.html", header: "与137亿设备语音对话的语音链是如何做到的？"},
+			{ from: "财经网", date: "2018-07-19 12:02:06:00", logo:"img/press-img/caijing.com.gif", url: "http://industry.caijing.com.cn/20180719/4488429.shtml", header: "与137亿设备语音对话的语音链是如何做到的？"},
+			{ from: "中国财经新闻网", date: "2018-07-19 11:04:43", logo:"img/press-img/prcfe.com.png", url: "http://www.prcfe.com/finance/2018/0719/267600.html", header: "与137亿设备语音对话的语音链是如何做到的？"},
+			{ from: "中国财经时报网", date: "2018-07-19 10:43:06", logo:"img/press-img/3news.cn.jpg", url: "http://www.3news.cn/pindao/2018/0719/0616285911.html", header: "与137亿设备语音对话的语音链是如何做到的？"},
+			{ from: "TechWeb", date: "2018-07-19 14:46:00", logo:"img/press-img/techweb.com.jpg", url: "http://prnews.techweb.com.cn/qiyenews/archives/85694.html", header: "与137亿设备语音对话的语音链是如何做到的？"},
+			{ from: "FX168", date: "2018-07-18 10:13:34:00", logo:"img/press-img/fx168.com.png", url: "http://news.fx168.com/shangxun/1807/2593260.shtml", header: "与137亿设备语音对话, “微信”专利创始人是如何做到"},
+			{ from: "中国金融商报", date: "2018-07-19 11:38:33", logo:"img/press-img/china.prcfe.com.png", url: "http://china.prcfe.com/global/2018/0719/42679.html", header: "与137亿设备语音对话的语音链是如何做到的？"},
+			{ from: "CSDN", date: "2018-07-19 14:13", logo:"img/press-img/csdn.png", url: "https://www.csdn.net/article/a/2018-07-19/15955504", header: "与137亿设备语音对话的语音链是如何做到的？"},
+		]
 	},
 	methods: {
 		changeLang: function (e) {
