@@ -374,11 +374,11 @@ $(document).ready(function () {
 
 	$('#subscribe').click(function(e){
 		e.preventDefault();
-		//https://voicecoin.io
+
 		$.ajax({
 			type: "POST",
 			contentType: 'application/json; charset=utf-8',
-			url: 'http://localhost:129/v1/Subscription',
+			url: 'https://www.voicecoin.io/v1/Subscription',
 			data: JSON.stringify({email: $('#subscribe-email').val()}),
 			success: function(){
 				alert('订阅成功')
